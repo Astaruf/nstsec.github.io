@@ -1,449 +1,1264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="This is my Portfolio website.">
-    <meta name="author" content="Lorenzo Anastasi">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-	<meta property="og:site_name" content="https://www.anastasi.link/" />
-	<meta property="og:site" content="https://www.anastasi.link/" />
-	<meta property="og:title" content="Lorenzo Anastasi - Welcome to my Portfolio"/>
-	<meta property="og:description" content="This is my Portfolio. Here you can find information about my career profile: experiences, certifications, contacts and more other." /> 
-	<meta property="og:image" content="images/logo.png" />
-	<meta property="og:url" content="https://www.anastasi.link/" />
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    <title>Lorenzo Anastasi - Welcome to my Portfolio</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon.png">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure>
+          <img src="./assets/images/my-avatar.png" alt="Lorenzo Anastasi" width="100%">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Lorenzo Anastasi">Lorenzo Anastasi</h1>
+
+          <p class="title">Ethical Hacker - Penetration Tester</p>
         </div>
-    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container">
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a> -->
-  
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-awesome fas fa-bars"></span>
-                <span class="navbar-toggler-awesome fas fa-times"></span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:anastasi.lorenzo@gmail.com" class="contact-link">anastasi.lorenzo@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Rome, Italy</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/lorenzo-anastasi-4715b783/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/lollonsts" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://t.me/Astaruf" class="social-link">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a cybersecurity specialist with about 5 years of experience, with a focus on ethical hacking and offensive security. I am distinguished by a passion for what I do and deep technical/teamwork skills.
+          </p>
+
+          <p>
+            My job is to perform daily penetration testing and vulnerability assessment activities on applications, infrastructure, and devices of all kinds. I research security vulnerabilities as a real attacker does, report them to software vendors in order to help them apply patches/fixes.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I hack</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web apps</h4>
+
+                <p class="service-item-text">
+                  Web applications vulnerability research.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">APIs</h4>
+
+                <p class="service-item-text">
+                  API vulnerability research.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Android and iOS apps vulnerability research.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-quote.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Networks</h4>
+
+                <p class="service-item-text">
+                  Infrastructure vulnerability research.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/mrnfrancesco.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Francesco Marano</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "Lavoro con Lorenzo da diversi anni e diverse aziende. Nel tempo l'ho visto assumere ruoli sia tecnici che di gestione di progetti e persone, sempre con ottimi risultati.
+Professionista serio, competente e attento ai dettagli, con una naturale capacità di comunicare in modo efficace e rassicurante."
+                    <br><b><a href="https://www.linkedin.com/in/mrnfrancesco/"\>More about mrnfrancesco</a></b>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!--
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/hackerino.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>???</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "Ci stanno tracciando! STACCA! STACCA!"<br>
+                    <br><b><a href="https://www.youtube.com/watch?v=g6tuepmUmJg"\>More about hackerino</a></b>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#certifications">CERTIFICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#experience">EXPERIENCES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#social">CONTACTS</a>
-                    </li>
-                </ul>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-        </div> 
-    </nav> 
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-5">
-                        <div class="text-container">
-                            <h1>Welcome to my Portfolio</h1>
-                            <p class="p-large">I am <b>Lorenzo Anastasi</b>, an <b>Ethical Hacker</b> and Webapp/Mobileapp/Infrastructure <b>Penetration Tester</b>.</p>
-                        </div> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </header> 
-    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs><style>.cls-1{fill:#5f4def;}</style></defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/></svg>
-    
-    <div id="social" class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="icon-container">
-                                    <span class="fa-stack">
-                                        <a href="https://www.linkedin.com/in/lorenzo-anastasi-4715b783/">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                                        </a>
-                                    </span>
-                                    <span class="fa-stack">
-                                        <a href="https://t.me/Astaruf">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fab fa-telegram-plane fa-stack-1x"></i>
-                                        </a>
-                                    </span>
-                                    <span class="fa-stack">
-                                        <a href="https://twitter.com/lollonsts">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fab fa-twitter fa-stack-1x"></i>
-                                        </a>
-                                    </span>
-                                    <span class="fa-stack">
-                                        <a href="mailto:anastasi.lorenzo@gmail.com">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fab fa-google fa-stack-1x"></i>
-                                        </a>
-                                    </span>
-                                </div> 
-                            </div> 
-                        </div>
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </div>
 
-    <div id="experience" class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="above-heading">CAREER</div>
-                    <h2 class="h2-heading">My Experiences</h2>
-                </div> 
-            </div> 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/image-3.jpg" alt="alternative">
-                    </div> 
-                </div> 
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h3>Ethical Hacker & Penetration Tester</h3>
-                        <p>Working actively as Pentester in the Security Assessment Team of Almaviva. I'm focused on computer systems vulnerability and remediation research. The main services provided everyday are Penetration Tests and Vulnerability Assessments on Web, Mobile and Infrastructure Applications. </p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Company:</b> AlmavivA S.p.A.</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Dates:</b> Sep 2020 – <font color="#5f4dee"><b>Present</b></font></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Location:</b> Rome, Italy</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="https://www.almaviva.it/en_GB/Defense-and-Security">More Info</a></div>
-                            </li>
-                        </ul>
-                    </div> 
-                </div> 
-            </div> 
-            <br><br><br>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/image-2.jpg" alt="alternative">
-                    </div> 
-                </div> 
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h3>Cyber Security Analyst</h3>
-                        <p>CY4GATE operates in the field of Cyber Electronic Warfare, Cyber Intelligence, offering a wide range of solutions to Intelligence Agencies, Government intelligence agencies, governmental organisations and corporations. It belongs to the Elettronica Group, one of the world's leading companies in the design, development and production of protection and security systems and equipment for Defence Electronics.</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Company:</b> CY4GATE S.p.A.</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Dates:</b> Jun 2019 – Sep 2020</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Duration:</b> 1 year 4 months</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Location:</b> Rome, Italy</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="https://www.cy4gate.com/en/">More Info</a></div>
-                            </li>
-                        </ul>
-                    </div> 
-                </div> 
-            </div> 
-            <br><br><br>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/image-1.jpg" alt="alternative">
-                    </div> 
-                </div> 
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h3>Technical Support Advisor</h3>
-                        <p>Teleperformance Italia is the leading partner in Customer Experience Management and BPO services, offering Customer Care, Customer Acquisition and Back office solutions in omnichannel mode for top companies worldwide.</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Company:</b> Teleperformance Italia</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Dates:</b> Apr 2013 – Jun 2019</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Duration:</b> 6 years 3 months</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><b>Location:</b> Rome, Italy</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="https://www.teleperformance.com/">More Info</a></div>
-                            </li>
-                        </ul>
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </div>
+            <div class="modal-content">
 
-    <div id="certifications" class="slider-2">
-        <div class="cards-1">
-            <div class="col-lg-12">
-                <div class="above-heading">CERTIFICATIONS</div>
-                <h2 class="h2-heading">My Certifications</h2>
-            </div> 
-        </div> 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">      
-                    
-                    <div class="slider-container">
-                        <div class="swiper-container text-slider">
-                            <div class="swiper-wrapper">
-                                
-                                
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/certification-4.jpg" alt="alternative">
-                                    </div> 
-                                    <div class="text-wrapper">
-                                        <h3>Web Application Penetration Tester eXtreme</h3>
-                                        <p>By obtaining the eWPTX, my skills in the following areas have been assessed and certified: penetration testing processes and methodologies, web application analysis and inspection, advanced Reporting skills and Remediation, advanced knowledge and abilities to bypass basics advanced XSS, SQLi, etc. filters, advanced knowledge of different Database Management Systems, ability to create custom exploits when the modern tools fail.</p>
-                                        <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <div class="media-body"><b>Exam Version:</b> eWPTX v2.0</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issued by:</b> eLearnSecurity</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issuing date:</b> </div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Certification ID:</b> </div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><a href="">View Credential</a></div>
-                                            </li>
-                                        </ul>
-                                    </div> 
-                                </div> 
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/certification-3.jpg" alt="alternative">
-                                    </div> 
-                                    <div class="text-wrapper">
-                                        <h3>Mobile Application Penetration tester</h3>
-                                        <p>By obtaining the eMAPT, my skills in the following areas have been assessed and certified: information gathering, reverse engineering Android applications, exploit Android vulnerabilities, applied security principles, logic flaws, exploit development for Android, environments, encryption and cryptography, identify vulnerable implementations.</p>
-                                        <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <div class="media-body"><b>Exam Version:</b> eMAPT v1.0</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issued by:</b> eLearnSecurity</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issuing date:</b> 11th of October 2021</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Certification ID:</b> 1148557</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><a href="https://verified.elearnsecurity.com/certificates/e7f364e7-2b76-460a-bfc9-025f5725d2ee">View Credential</a></div>
-                                            </li>
-                                        </ul>
-                                    </div> 
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/certification-2.jpg" alt="alternative">
-                                    </div> 
-                                    <div class="text-wrapper">
-                                        <h3>Certified Professional Penetration Tester</h3>
-                                        <p>By obtaining the eCPPT, my skills in the following areas will be assessed and certified: penetration testing processes and methodologies, against Windows and Linux targets, Vulnerability Assessment of networks, Vulnerability Assessment of Web Applications, advanced exploitation with Metasploit, performing attacks in pivoting, web application manual exploitation, information gathering and reconnaissance, acanning and profiling the target, privilege escalation and persistence, exploit development, advanced reporting skills and remediation.</p>
-                                        <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <div class="media-body"><b>Exam Version:</b> eCPPT v2.0</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issued by:</b> eLearnSecurity</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issuing date:</b> 11th of May 2021</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Certification ID:</b> 7163434</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><a href="https://verified.elearnsecurity.com/certificates/b284e2a1-8c9d-487e-bb74-081c1ee34dc9">View Credential</a></div>
-                                            </li>
-                                        </ul>
-                                    </div> 
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/certification-1.jpg" alt="alternative">
-                                    </div> 
-                                    <div class="text-wrapper">
-                                        <h3>Web Application Penetration Tester</h3>
-                                        <p>By obtaining the eWPT, my skills in the following areas will be assessed and certified: penetration testing processes and methodologies, web application analysis and inspection, OSINT and information gathering techniques, Vulnerability Assessment of web applications, OWASP TOP 10 2013 / OWASP Testing guide, manual exploitation of XSS, SQLi, web services, HTML5, LFI/RFI, exploit development for web environments, advanced reporting skills and remediation.</p>
-                                        <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <div class="media-body"><b>Exam Version:</b> eWPT v1.0</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issued by:</b> eLearnSecurity</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Issuing date:</b> 8th of December 2020</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><b>Credential ID:</b> 6278605</div>
-                                            </li>
-                                            <li class="media">
-                                                <div class="media-body"><a href="https://verified.elearnsecurity.com/certificates/03d751c3-f7b3-4363-9054-929d1467429e">View Credential</a></div>
-                                            </li>
-                                        </ul>
-                                    </div> 
-                                </div>
-                            </div> 
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div> 
-                    </div>
-                </div> 
-            </div> 
-        </div> 
-    </div>
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-    <div id="social" class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="above-heading">SOCIAL</div>
-                    <h2 class="h2-heading">My Recent Posts</h2>
-                </div> 
-            </div> 
-            <div class="row">
-                <div class="col-lg-6">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6897514246696230912" height="730" width="550" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div> 
-                <div class="col-lg-6">
-                    <div>
-                        <blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">Glad to read this e-mail :) <a href="https://twitter.com/eLearnSecurity?ref_src=twsrc%5Etfw">@eLearnSecurity</a> <a href="https://twitter.com/ine?ref_src=twsrc%5Etfw">@ine</a> <a href="https://twitter.com/hashtag/ewptx?src=hash&amp;ref_src=twsrc%5Etfw">#ewptx</a> <a href="https://twitter.com/hashtag/pentesting?src=hash&amp;ref_src=twsrc%5Etfw">#pentesting</a> <a href="https://twitter.com/hashtag/cybersecurity?src=hash&amp;ref_src=twsrc%5Etfw">#cybersecurity</a> <a href="https://t.co/L0Ar3s6YcA">pic.twitter.com/L0Ar3s6YcA</a></p>&mdash; 10110 (@lollonsts) <a href="https://twitter.com/lollonsts/status/1491751183907762185?ref_src=twsrc%5Etfw">February 10, 2022</a></blockquote>
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </div>
+              <time datetime="2021-06-14">14 June, 2021</time>
 
-    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#5f4def;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-col first">
-                        <h4>About Me</h4>
-                        <p class="p-small">I'm an <b>Ethical Hacker</b> and Webapp/Mobileapp/Infrastructure <b>Penetration Tester</b>.</p>
-                    </div>
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+        <!--
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">AlmavivA</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Penetration Tester Team Leader</h4>
+
+              <span>Feb 2022 - Present (10 mos)</span>
+
+              <!--<p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>-->
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Penetration Tester</h4>
+
+              <span>Sep 2020 - Jan 2022 (1 yr 5 mos)</span>
+
+              <!--<p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>-->
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">CY4GATE</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cybersecurity consultant</h4>
+
+              <span>Jun 2019 - Sep 2020 (1 yr 4 mos)</span>
+
+              <!--<p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>-->
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Teleperformance</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Account Security Support Advisor</h4>
+
+              <span>Jun 2016 - Jun 2019 (3 yrs 1 mo)</span>
+
+              <!--<p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>-->
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tier 1 Support Advisor</h4>
+
+              <span>Apr 2013 - Jun 2016 (3 yrs 3 mos)</span>
+
+              <!--<p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>-->
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Ethereum</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ethereum Network Validator</h4>
+  
+              <span>Nov 2017 - Dec 2018 (1 yrs 2 mos)</span>
+  
+              <!--<p class="timeline-text">
+                Ethereum Blockchain transaction validation (PoW mining).
+              </p>-->
+  
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Certificates</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">OSCP (PEN-200) - Offensive Security Penetration Testing</h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">OSWP (PEN-210) - Offensive Security Wireless Attacks</h5>
+                <data value="10">10%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 10%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">eWPTXv2 - eLearnSecurity Web Penetration Testing eXtreme</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">eMAPTv2 - eLearnSecurity Mobile App Penetration Testing</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">eCPPTv2 - eLearnSecurity Certified Professional Penetration Tester</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">eWPT - eLearnSecurity Web Application Penetration Testing</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CNSS - International Cybersecurity Institute</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Geeks Academy - Ethical Hacking & Penetration Testing</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">ED Set - EF Standard English Test</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Google Digital Marketing - IAB Europe</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">UAS Remote Pilot Open Category A1+A3</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CERTIFICATES
+      -->
+
+      <article class="certificates" data-page="certificates">
+
+        <header>
+          <h2 class="h2 article-title">Certificates</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Cybersecurity</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Other</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Cybersecurity</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Other</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                        <h4>Contact</h4>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">Rome, Italy</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="white" href="mailto:anastasi.lorenzo@gmail.com">anastasi.lorenzo@gmail.com</a></div>
-                            </li>
-                        </ul>
-                    </div> 
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                        <h4>Social</h4>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="white" href="https://www.linkedin.com/in/lorenzo-anastasi-4715b783/">LinkedIn</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="white" href="https://twitter.com/lollonsts">Twitter</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="white" href="https://t.me/Astaruf">Telegram</a></div>
-                            </li>
-                        </ul>
-                    </div> 
-                </div>
-            </div> 
-        </div> 
-    </div> 
 
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Hello World!</p>
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script src="js/jquery.min.js"></script> 
-    <script src="js/popper.min.js"></script> 
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/jquery.easing.min.js"></script> 
-    <script src="js/swiper.min.js"></script> 
-    <script src="js/scripts.js"></script> 
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
