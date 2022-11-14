@@ -162,7 +162,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Experience</button>
           </li>
 
           <li class="navbar-item">
@@ -170,10 +170,10 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Articles</button>
           </li>
 
-          <li class="social-item">
+          <!-- <li class="social-item">
             <a href="mailto:anastasi.lorenzo@gmail.com" class="social-link">
               <ion-icon name="mail-outline"></ion-icon>
             </a>
@@ -195,7 +195,7 @@
             <a href="https://t.me/Astaruf" class="social-link">
               <ion-icon name="paper-plane-outline"></ion-icon>
             </a>
-          </li>
+          </li> -->
 
         </ul>
 
@@ -257,7 +257,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="API security icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -289,7 +289,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/globe-outline.svg" alt="www icon" width="40">
+                <img src="./assets/images/icon-quote.svg" alt="www icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -321,7 +321,7 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/mrnfrancesco.png" alt="Francesco Marano" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/testimonial-1.png" alt="Francesco Marano" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Francesco Marano</h4>
@@ -386,7 +386,7 @@ Professionista serio, competente e attento ai dettagli, con una naturale capacit
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/hackerino.png" alt="???" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/testimonial-2.png" alt="???" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>???</h4>
@@ -508,13 +508,13 @@ Professionista serio, competente e attento ai dettagli, con una naturale capacit
 
 
       <!--
-        - #RESUME
+        - #EXPERIENCE
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="experience">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Experience</h2>
         </header>
 
         <section class="timeline">
@@ -675,8 +675,43 @@ Professionista serio, competente e attento ai dettagli, con una naturale capacit
           <h2 class="h2 article-title">Certificates</h2>
         </header>
 
-        <section class="projects">
+        <section class="skill">
+          <h3 class="h3 skills-title">In progress</h3>
 
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">OSCP - Offensive Security Penetration Testing</h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">OSWP - Offensive Security Wireless Attacks</h5>
+                <data value="10">10%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 10%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="projects">
+          <br>
           <ul class="filter-list">
 
             <li class="filter-item">
@@ -684,7 +719,7 @@ Professionista serio, competente e attento ai dettagli, con una naturale capacit
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Cybersecurity</button>
+              <button data-filter-btn>Hacking</button>
             </li>
 
             <li class="filter-item">
@@ -712,7 +747,7 @@ Professionista serio, competente e attento ai dettagli, con una naturale capacit
               </li>
 
               <li class="select-item">
-                <button data-select-item>Cybersecurity</button>
+                <button data-select-item>Hacking</button>
               </li>
 
               <li class="select-item">
@@ -725,202 +760,184 @@ Professionista serio, competente e attento ai dettagli, con una naturale capacit
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="https://mylogin.exin.nl/polarserver.asp?ToolName=CertificateCheckTool&LastName=Anastasi&CertificateNumber=6441503.20831381&ModuleID=630590" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/cert-10.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">EXIN Ethical Hacking</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Feb 2022</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="other">
+              <a href="https://dac.gouvernement.lu/en.html" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/cert-9.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">UAS Remote Pilot - Open Category A1 A3</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Feb 2022 - Feb 2027</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="https://verified.elearnsecurity.com/certificates/684e69b3-2eb3-4c8d-910c-cac8225071c8" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/cert-8.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">eWPTX v2.0 - Web Application Penetration Tester Extreme</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Feb 2022</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="https://verified.elearnsecurity.com/certificates/e7f364e7-2b76-460a-bfc9-025f5725d2ee" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/cert-7.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">eMAPT v1.0 - Mobile Application Penetration Tester</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Oct 2021</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="other">
+              <a href="https://www.efset.org/cert/zBbuBD">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/cert-6.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">English Language Certification</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">May 2021</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="https://verified.elearnsecurity.com/certificates/b284e2a1-8c9d-487e-bb74-081c1ee34dc9" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/cert-5.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">eCPPT v2.0 - Certified Professional Penetration Tester</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">May 2021</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="https://verified.elearnsecurity.com/certificates/03d751c3-f7b3-4363-9054-929d1467429e" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/cert-4.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">eWPT v1.0 - Certified Professional Penetration Tester</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">May 2021</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="other">
+              <a href="https://dfir-training.basistech.com/certificates/gsugvswxva" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="./assets/images/cert-3.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Task Manager</h3>
+                <h3 class="project-title">Autopsy Digital Forensic</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Aug 2020</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="other">
+              <a href="https://www.credential.net/bb4b1827-25a7-4e17-ba53-b38f4064be0e#gs.isaa8m" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                  <img src="./assets/images/cert-2.png" alt="certificate" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Arrival</h3>
+                <h3 class="project-title">ICSI Certified Network Specialist</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">May 2020</p>
 
               </a>
             </li>
 
-          </ul>
+            <li class="project-item  active" data-filter-item data-category="hacking">
+              <a href="https://www.geeksacademy.it/corsi?a=2#elenco_corsi" target="_blank">
 
-        </section>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-        <section class="skill">
-          <br>
-          <h3 class="h3 skills-title">In progress</h3>
+                  <img src="./assets/images/cert-1.png" alt="certificate" loading="lazy">
+                </figure>
 
-          <ul class="skills-list content-card">
+                <h3 class="project-title">Ethical Hacking - Geeks Academy Europe</h3>
 
-            <li class="skills-item">
+                <p class="project-category">May 2018</p>
 
-              <div class="title-wrapper">
-                <h5 class="h5">OSCP (PEN-200) - Offensive Security Penetration Testing</h5>
-                <data value="30">30%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">OSWP (PEN-210) - Offensive Security Wireless Attacks</h5>
-                <data value="10">10%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 10%;"></div>
-              </div>
-
+              </a>
             </li>
 
           </ul>
@@ -934,13 +951,13 @@ Professionista serio, competente e attento ai dettagli, con una naturale capacit
 
 
       <!--
-        - #BLOG
+        - #ARTICLES
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="articles">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Articles</h2>
         </header>
 
         <section class="blog-posts">
