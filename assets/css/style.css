@@ -159,8 +159,6 @@ body { background: var(--smoky-black); }
 
 
 
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -1222,7 +1220,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1230,13 +1227,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 /**
  * responsive larger than 450px screen
  */
+ @media (min-width: 250px) {
+
+  /**
+   * client
+   */
+  .test {max-width:50%}
+
+}
+
 
 @media (min-width: 450px) {
 
   /**
    * client
    */
-
+  .test {max-width:30%}
   .clients-item { min-width: calc(33.33% - 10px); }
 
 
@@ -1247,6 +1253,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
+
 
 }
 
@@ -1263,7 +1270,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
-
+  .test {max-width:60%}
   :root {
 
     /**
@@ -1553,7 +1560,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 700px; }
+  .sidebar, article { width: 500px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1652,7 +1659,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
-
+  .test {max-width:20%}
   :root {
 
     /**
@@ -1767,7 +1774,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * RESET
    */
-
+  .test {max-width:100%}
   body::-webkit-scrollbar { width: 20px; }
 
   body::-webkit-scrollbar-track { background: var(--smoky-black); }
