@@ -2,15 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -1224,25 +1215,27 @@ textarea.form-input::-webkit-resizer { display: none; }
   #RESPONSIVE
 \*-----------------------------------*/
 
-/**
- * responsive larger than 450px screen
- */
- @media (min-width: 250px) {
+@media (max-width: 449px) {
 
   /**
    * client
    */
-  .test {max-width:50%}
+
+  .avatar-box img { width: 80px; }
 
 }
 
 
-@media (min-width: 450px) {
+/**
+ * responsive larger than 450px screen
+ */
+
+ @media (min-width: 450px) {
 
   /**
    * client
    */
-  .test {max-width:30%}
+
   .clients-item { min-width: calc(33.33% - 10px); }
 
 
@@ -1253,7 +1246,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
-
+  .avatar-box img { width: 80px; }
 
 }
 
@@ -1270,7 +1263,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
-  .test {max-width:60%}
+
   :root {
 
     /**
@@ -1337,6 +1330,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-height: 180px;
     margin-bottom: 30px;
   }
+
 
   .sidebar.active { max-height: 584px; }
 
@@ -1643,7 +1637,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+
 }
 
 
@@ -1659,7 +1653,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
-  .test {max-width:20%}
+
   :root {
 
     /**
@@ -1759,6 +1753,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-banner-box { height: 230px; }
 
+
+  
 }
 
 
@@ -1774,7 +1770,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * RESET
    */
-  .test {max-width:100%}
+
   body::-webkit-scrollbar { width: 20px; }
 
   body::-webkit-scrollbar-track { background: var(--smoky-black); }
